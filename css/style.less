@@ -1,0 +1,27 @@
+@import '../../bootkick/css/style.less';
+
+@import 'variables.less';
+
+#header,
+#content-wrap,
+#footer{
+	& > .wrap{
+		.column-container(@gridColumns, @gridColumnWidth, @gridGutterWidth)
+	}
+}
+
+section.content{
+	.columns(10);
+	float: left;
+	&#home{
+		.columns(10);
+	}
+}
+
+aside{
+	.columns(6);
+	float: right;
+	&.home{
+		.columns(4);
+	}
+}
